@@ -1,0 +1,25 @@
+.Diff {
+  display: inline;
+  background-color: #fff;
+  font-size: 1em;
+  font-family: monospace;
+  line-height: 1.4em;
+}
+
+.Diff__text--added,
+.Diff__text--removed {
+}
+
+.Diff__text--added {
+  color: rgba(40, 80, 0, 1);
+  background-color: rgba(40, 100, 0, 0.1);
+}
+
+.Diff__text--equal {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.Diff__text--removed {
+  color: rgba(200, 20, 20, 1);
+  background-color: rgba(200, 0, 0, 0.1);
+}
