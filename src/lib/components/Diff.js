@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import './Diff.scss';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import "./Diff.scss";
 
 class Diff extends Component {
   diff = [];
@@ -10,7 +10,7 @@ class Diff extends Component {
       !!condition && (
         <span
           key={part.key}
-          className={'Diff__text Diff__text--' + classModifier}
+          className={"Diff__text Diff__text--" + classModifier}
         >
           {part.value}
         </span>
@@ -32,16 +32,20 @@ class Diff extends Component {
       <span className="Diff">
         {this.diff.map(this.switchPartProps).map(part => {
           if (part.added) {
-            return this.printPart(part, 'added', !this.props.hideAdded);
+            return this.printPart(part, "added", !this.props.hideAdded);
           } else if (part.removed) {
-            return this.printPart(part, 'removed', !this.props.hideRemoved);
+            return this.printPart(part, "removed", !this.props.hideRemoved);
           } else {
-            return this.printPart(part, 'equal', !this.props.hideEqual);
+            return this.printPart(part, "equal", !this.props.hideEqual);
           }
         })}
       </span>
     );
   };
+
+  render() {
+    return null;
+  }
 }
 
 Diff.defaultProps = {
