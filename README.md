@@ -1,70 +1,53 @@
 # React Diff Components
 
+A set of intuitive components to render differences between two strings.
+
 ## Install
 ```bash
-$ yarn add react-diff-components
+yarn add react-diff-components
 ```
 or
 ```bash
-$ npm i react-diff-components --save
+npm i --save react-diff-components
 ```
 
--------------------------------------
-
-## DiffChars
+## Sample code
 
 ```jsx
-<DiffChars from={stringA} to={stringB} />
-```
-### ignoreCase = true
-```jsx
-<DiffChars ignoreCase from={stringA} to={stringB} />
-```
+import { React } from 'react';
 
--------------------------------------
+// use the Diff component that best suits your needs
+import { DiffChars } from 'react-diff-components';
+import { DiffWords } from 'react-diff-components';
+import { DiffSentences } from 'react-diff-components';
+import { DiffLines } from 'react-diff-components';
 
-## DiffLines
-
-```jsx
-<DiffLines from={'LorinK\nGitHub'} to={'LorinWeb\nGitHub'} />
-```
--------------------------------------
-
-## DiffSentences
-
-```jsx
-<DiffSentences from={stringA} to={stringB} />
-```
-
-### hideAdded = true
-```jsx
-<DiffSentences from={stringA} to={stringB} hideAdded />
-```
-
-### hideRemoved = true
-```jsx
-<DiffSentences from={stringA} to={stringB} hideRemoved />
+export default () => (
+  <div>
+    <DiffChars from="chars" to="Cars"/>
+    <hr />
+    <DiffWords
+      from="A world changes the word"
+      to="A word changes the world"
+      hideAdded={false}
+      hideRemoved={false}
+    />
+    <hr />
+    <DiffSentences
+      from="This sentence got removed. This one stayed."
+      to="This one stayed. This was added!"
+    />
+    <hr />
+    <DiffLines from="a line was this" to="now is that" />
+  </div>
+);
 ```
 
--------------------------------------
+### Available props
+- __from__: type = string, isRequired = true;
+- __to__: type = string, isRequired = true;
+- __ignoreCase__: type = bool, default = false;
+- __hideRemoved__: type = bool, default = false;
+- __hideAdded__: type: bool default = false;
 
-## DiffWords
-
-```jsx
-<DiffWords from={stringA} to={stringB} />
-```
-
-### ignoreSpaces = true
-```jsx
-<DiffWords ignoreSpaces from={stringA} to={stringB} />
-```
-
-### hideAdded = true
-```jsx
-<DiffWords from={fromUrl} to={toUrl} hideAdded />
-```
-
-### hideRemoved = true
-```jsx
-<DiffWords from={fromUrl} to={toUrl} hideRemoved />
-```
+__ignoreCase is only availbale for DiffChars and DiffWords__
