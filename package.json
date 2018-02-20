@@ -1,6 +1,6 @@
 {
   "name": "react-diff-components",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A set of diff components for React based on the diff package from kpdecker",
   "main": "build/index.js",
   "scripts": {
