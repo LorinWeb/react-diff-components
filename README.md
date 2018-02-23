@@ -61,7 +61,7 @@ export default () => {
 
 ### `<DiffWords />`:
 
-Using `<DiffWords />`, if a single character has changed the whole word gets highlighted:
+With `<DiffWords />`, if a single character has changed the whole word gets highlighted. It displays the most human-friendly result in the majority of cases:
 
 
 ```jsx
