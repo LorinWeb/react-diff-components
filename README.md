@@ -22,7 +22,7 @@ npm i react-diff-components --save
 - __hideRemoved:__ bool, false by default;
 - __hideAdded:__ bool, false by default.
 
-__Note:__ ignoreCase is availbale only for `<DiffChars />` and `<DiffWords />`
+__Note:__ ignoreCase is available only for `<DiffChars />` and `<DiffWords />`
 
 ## Examples and use-cases
 
@@ -35,23 +35,23 @@ import { React } from 'react';
 import { DiffChars } from 'react-diff-components';
 
 export default () => {
-    const redirectFrom = 'http://www.example.com/a';
-    const redirectTo = 'https://www.example.com/A';
+    const A = 'http://www.example.com/a';
+    const B = 'https://www.example.com/A';
     return (
         <div>
-            <DiffChars from={redirectFrom} to={redirectTo} />
+            <DiffChars from={A} to={B} />
             <p>
                 Case insensitive:<br />
-                <DiffChars from={redirectFrom} to={redirectTo} ignoreCase />
+                <DiffChars from={A} to={B} ignoreCase />
             </p>
             <ul>
                 <li>
                     Old string:<br />
-                    <DiffChars from={redirectFrom} to={redirectTo} hideAdded />
+                    <DiffChars from={A} to={B} hideAdded />
                 </li>
                 <li>
                     New string:<br />
-                    <DiffChars from={redirectFrom} to={redirectTo} hideRemoved />
+                    <DiffChars from={A} to={B} hideRemoved />
                 </li>
             </ul>
         </div>
