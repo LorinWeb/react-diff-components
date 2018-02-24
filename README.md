@@ -80,7 +80,7 @@ export default () => (
 
 ### `<DiffSentences />`:
 
-Using `<DiffSentences />`, differences get highlighted at a sentence level. That proves useful if users are supposed to read a full sentence to contextualise a change and approve it. Thake the following as an example:
+Using `<DiffSentences />`, differences get highlighted at a sentence level. That proves useful if users are supposed to read a full sentence to contextualise a change and approve it. Take the following as an example:
 
 ```jsx
 import { React } from 'react';
