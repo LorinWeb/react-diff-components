@@ -1,7 +1,7 @@
 {
   "name": "react-diff-components",
   "version": "1.0.0",
-  "description": "A set of diff components for React based on the diff package from kpdecker",
+  "description": "Modern, accessible React components for rendering beautiful text diffs.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
