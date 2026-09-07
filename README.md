@@ -1,6 +1,14 @@
 # React Diff Components
 
+[![npm version](https://img.shields.io/npm/v/react-diff-components.svg)](https://www.npmjs.com/package/react-diff-components)
+[![license](https://img.shields.io/npm/l/react-diff-components.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/demo-live%20preview-success?style=flat&logo=github)](https://lorinweb.github.io/react-diff-components/)
+
 A set of modern, intuitive, and accessible React components to render differences between two strings. Built with **TypeScript**, compatible with **React 16.8 through React 19+**, and supporting **ESM** and **CommonJS**.
+
+🎮 **[See them in action (Demo)](https://lorinweb.github.io/react-diff-components/)**
+
+---
 
 ## Features
 
