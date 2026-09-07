@@ -25,6 +25,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsup",
+    "build:demo": "vite build",
+    "preview:demo": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",

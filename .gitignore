@@ -3,6 +3,7 @@ node_modules/
 
 # Production output
 dist/
+dist-demo/
 
 # Testing & Coverage
 coverage/

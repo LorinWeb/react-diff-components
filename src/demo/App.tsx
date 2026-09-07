@@ -52,7 +52,7 @@ export const App: React.FC = () => {
         <div>
           <h1 className="demo-title">React Diff Components</h1>
           <span style={{ fontSize: '0.9rem', color: '#64748b' }}>
-            Modernized, TypeScript-first, accessible diff components
+            Modern, TypeScript-first, accessible diff components
           </span>
         </div>
         <button className="theme-toggle-btn" onClick={toggleTheme}>
